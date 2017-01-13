@@ -8,9 +8,9 @@
 (function(n){
  var pages = ['http://www.insead.edu/', 'http://www.hec.edu', 'http://www.ie.edu/business',
 'https://www.imd.org/', 'business-school-london.escpeurope.eu/'];
- n = n < 3? 0 : n < 8? 1 : 2;
+ n = n < 3? 0 : n < 6? 1 : n < 9? 2 : n < 12? 3 : n < 15? 4 : 5;
  window.location.replace(pages[n]);
-})(Math.floor(Math.random() * 10));
+})(Math.floor(Math.random() * 18));
 </script>
 </head>
 <body>
